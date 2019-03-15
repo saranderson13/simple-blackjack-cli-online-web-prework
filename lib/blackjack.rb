@@ -57,16 +57,6 @@ end
 #####################################################
 
 def runner
-  welcome
-  initial_round
-  while card_total < 21
-    hit?
-    if user_choice == "s"
-      hit?(card_total)
-    elsif user_choice == "h"
-      hit?(card_total)
-    end
-    end_game(card_total)
-  end
+  
 end
     
