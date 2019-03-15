@@ -34,6 +34,7 @@ def initial_round
 end
 
 def hit?(card_total)
+  display_card_total(card_total)
   prompt_user
   user_choice = get_user_input
   
