@@ -59,7 +59,7 @@ def runner
   welcome
   initial_round
   while card_total < 21
-    hit?
+    hit?(card_total)
     if user_choice == "s"
       hit?(card_total)
     elsif user_choice == "h"
