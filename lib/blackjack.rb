@@ -62,9 +62,9 @@ def runner
   while card_total < 21
     hit?
     if user_choice == "s"
-      hit?
+      hit?(card_total)
     elsif user_choice == "h"
-      hit?
+      hit?(card_total)
     end
     end_game(card_total)
   end
