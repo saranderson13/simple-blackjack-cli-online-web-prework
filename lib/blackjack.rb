@@ -44,6 +44,7 @@ def hit?(card_total)
   else
     invalid_command
   end
+  display_card_total
 end
 
 def invalid_command
@@ -60,5 +61,12 @@ def runner
   initial_round
   while card_total < 21
     hit?
+    if user_choice == "s"
+      hit?
+    elsif user_choice == "h"
+      hit?
+    end
+    end_game(card_total)
+  end
 end
     
