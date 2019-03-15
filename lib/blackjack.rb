@@ -34,8 +34,6 @@ def initial_round
 end
 
 def hit?(card_total)
-  # code hit? here
-  
   prompt_user
   user_choice = get_user_input
   
@@ -46,7 +44,6 @@ def hit?(card_total)
   else
     invalid_command
   end
-  
 end
 
 def invalid_command
@@ -59,6 +56,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  while card_total < 21
+    hit?
 end
     
